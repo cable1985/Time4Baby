@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <div id="banner">
+        <span id="time">T I M E</span>
+        <img src="Owl1.png" alt="" />
+        <span id="baby" >B A B Y</span>
+    </div>
+    
+    <meta charset="utf-8" />
+    <title>Register</title>
+    
+    <link rel="shortcut icon" href="Owl.ico" type="image/x-icon"/ >
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+              
+</head>
+<body id="register">
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <form method="post">
+        <div class="form-group">
+            
+            <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Baby's name" value="<%= locals.firstName || '' %>" required />
+        </div>
+        <div class="form-group">
+            
+            <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last name" value="<%= locals.lastName || '' %>" required />
+            
+            <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="<%= locals.username || '' %>" required />
+                    <input type="password" name="password" id="password" placeholder="password" class="form-control" required />
+            
+                <input type="radio" name="gender" value="girl" required/>girl
+                <input type="radio" name="gender" value="boy" required/>boy 
+                
+</form>
+            <button id="submit" type="submit" class="btn btn-primary">Register</button>
+            <a href="/login" class="btn btn-link">Cancel</a>
+        
+    </form>
+</div>
+</body>
+        <div class="footer">
+            <span>T I M E</span>
+            <img id="footerOwl" src="Owl1.png" alt="" />
+            <span>B A B Y</span><br>
+            <a id="about" href="/about" class="btn btn-link">About</a>
+        </div>
+
+</html>
+    

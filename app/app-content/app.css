@@ -1,0 +1,513 @@
+
+
+/*------------------------*/
+#name{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 4.5vw;
+    width: 100%;
+    font-family: serif;
+    font-size: 4vw;
+    
+}
+
+#banner{
+    position: absolute;
+    right: 5vw;
+    top: 0vw;
+}
+
+#time{
+    color: pink;
+    text-align: center;
+    font-family: serif;
+    font-size: 4vw;
+    
+}
+
+#baby{
+    text-align: center;
+    font-family: serif;
+    font-size: 4vw;
+    color:skyblue;
+}
+
+img{
+    position: relative;
+    width: 11vw;
+    height: auto;
+    
+}
+
+#headerOwl{
+    background-image: url(Owl.png);
+}
+
+h2{
+    color: transparent;
+    
+}
+
+html{
+    background-image: url(background3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*login and main index css elephant background*/
+body{
+    background-blend-mode: exclusion, normal;
+    background-position: 3vw 38vw, 3vw 38vw  ,14vw 9vw;
+    background-color: transparent;
+    background-image: url(elephant.png),url(elephant.png),url(elephant.png);
+    background-repeat:no-repeat;
+    background-size:13vw, 13vw, 55vw;
+    }
+/*nursing and changing css elephant background*/
+.modal-content{
+    width: 100%;
+    height: 100%;
+    background-position: 6vw 38vw, 19.9vw 5vw,0 0;
+    background-image: url(elephant.png),url(elephant.png),url(background3.jpeg);
+    background-repeat:no-repeat;
+    background-size:13vw,55vw,cover;
+    background-blend-mode: exclusion, normal,normal;
+}
+
+/*pumping and feeding background with bottle*/
+.modal-contain{
+    width: 100%;
+    height: 100%;
+    background-position: center -2vw, 6.1vw 39vw ,16vw 5vw,0,0;
+    background-image: url(bottle.jpg),url(elephant.png),url(elephant.png),url(background3.jpeg);
+    background-repeat:no-repeat;
+    background-size: 50vw,20vw,70vw, cover;
+    background-blend-mode: exclusion,exclusion, normal,normal;
+}
+
+/*index are the main buttons on home page*/
+#submit,#index{
+    opacity: 0.5;
+    width:35vw;
+    font-family: serif;
+    background-color: gray; 
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    font-size: 4vw;
+    margin: 1vw auto;
+    text-decoration: none;
+    display: block;
+}
+
+main{
+    margin-top: 10vw;
+}
+
+#username,#lastName,#password,#firstName{
+    margin: 0 auto;
+    width: 30%;
+    font-size: 1.3vw;
+    text-align: justify;
+    background-color: whitesmoke;
+}
+
+#submit:hover,#index:hover,#save:hover,#delete:hover{
+    text-decoration: none;
+    background-color: darkgray;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#submit:active,#save:active,#delete:active, #printButton:active{
+    background-color: darkgray;
+ }
+
+
+.form-group{
+    font-family: serif;
+    font-size: 3vw;
+    text-align: center;
+}
+
+#save,#delete{
+    opacity: 0.5;
+    width:20%;
+    font-family: serif;
+    background-color: gray; 
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    font-size: 2vw;
+    margin-left: 12vw 1vw;
+    text-decoration: none;
+}
+
+.nav-pills{
+  position: absolute;
+  
+}
+
+.nav-pills >li >a {
+
+    font-family: serif;
+    color: black;
+    background-color: transparent;
+    font-size: 2vw;
+ }
+
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus, 
+.nav-pills>li.active>a:hover {
+    color: white;
+    background-color: gray;
+}
+
+h4{
+    position: absolute;
+    left: 3vw;
+    font-size: 3vw;
+    font-family: serif;
+    color:black;
+}
+
+
+
+#left{
+        opacity: 0.5;
+        width:30%;
+        font-family: serif;
+        background-color: dimgray; 
+        border: none;
+        outline: none;
+        color: black;
+        text-align: center;
+        font-size: 8vw;
+        margin: 6vw;
+        margin-left: 11vw;
+        margin-top: 20vw;
+        border-radius: 0.8vw;   
+        padding: 3vw;
+}
+
+#right{
+        opacity: 0.5;
+        width:30%;
+        font-family: serif;
+        background-color: dimgray; 
+        border: none;
+        outline: none;
+        color: black;
+        text-align: center;
+        font-size: 8vw;
+        margin: 6vw;
+        margin-left: 11vw;
+        border-radius: 0.8vw;
+        padding:3vw; 
+}
+
+#left:hover{
+    background-color:cadetblue;
+}
+
+#left:active{
+    background-color: darkgrey;
+}
+
+#right:hover{
+    background-color:cadetblue;
+}
+
+#right:active{
+    background-color: darkgrey;
+}
+
+/*pump css*/
+#leftml{
+    margin-top: 20vw;
+    margin-left: 5vw;
+    opacity: 0.5;
+    padding: 2vw;
+    width: 15%;
+    font-size: 3vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+    
+}
+
+#rightml{
+    margin-top: 20vw;
+    margin-left: 1vw;
+    opacity: 0.5;
+    padding: 2vw;
+    width: 15%;
+    font-size: 3vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+    
+}
+
+#leftoz{
+    margin-top: 17vw;
+    margin-left: 26vw;
+    opacity: 0.5;
+    padding: 2vw;
+    width: 15%;
+    font-size: 3vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+    
+}
+
+#rightoz{
+    margin-top: 17vw;
+    margin-left: 1vw;
+    opacity: 0.5;
+    padding: 2vw;
+    width: 15%;
+    font-size: 3vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+    
+}
+
+
+#rightml:hover, #leftml:hover, #leftoz:hover, #rightoz:hover{
+    background-color: #FFF985;
+    text-decoration: none;
+}
+
+/*changing css*/
+input[class=wet]{
+    margin-top: 23vw;
+    margin-left: 3.4vw;
+    opacity: 0.5;
+    padding: 3vw;
+    width: 30%;
+    font-size: 6vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+    
+}
+
+input[class=dirty]{
+    margin-left: 1vw;
+    margin-top: 10vw;
+    opacity: 0.5;
+    padding: 3vw;
+    width: 30%;
+    font-size: 6vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color:gray;
+    box-shadow: none;
+}
+
+input[class=both]{
+    margin-left: 1vw;
+    margin-top: 10vw;
+    opacity: 0.5;
+    padding: 3vw;
+    width: 30%;
+    font-size: 6vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+}
+
+input[class=wet]:hover{
+    background-color: mediumaquamarine;
+    text-decoration: none;
+}
+
+
+input[class=dirty]:hover{
+    background-color: mediumaquamarine;
+    text-decoration: none;
+}
+
+input[class=both]:hover{
+    background-color: mediumaquamarine;
+    text-decoration: none;
+}
+
+
+input[class=milliliter]{
+    margin-top: 23vw;
+    margin-left: 5vw;
+    opacity: 0.5;
+    padding: 3vw;
+    width: 30%;
+    font-size: 6vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+    
+}
+
+input[class=ounces]{
+    margin-left: 29.6vw;
+    margin-top: 10vw;
+    opacity: 0.5;
+    padding: 3vw;
+    width: 30%;
+    font-size: 6vw;
+    border-radius: 0.8vw;
+    font-family:serif;
+    background-color: gray;
+    box-shadow: none;
+}
+
+input[name=quantity]:focus{
+    outline:none;
+       
+}
+
+input[class=ounces]:hover{
+    background-color: lightskyblue;
+    text-decoration: none;
+}
+
+input[name=quantity]{
+    position: fixed;
+    font-family: monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 8vw;
+    margin-left: 43vw;
+    background-color: transparent;
+    border: none;
+    width: 18%;
+    text-align: center;
+    margin-top: 33vw;
+    
+       
+}
+
+
+input[class=milliliter]:hover{
+    background-color: lightskyblue;
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+
+/*remove button*/
+.button {
+  left: 0.5vw;
+  border-radius: .5vw;
+  background-color: crimson;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  padding: 0.6vw;
+  width: 12vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: 3vw;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2vw;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 2vw;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*only prints the babies name and log entries from the log*/
+@media print {
+    #no-print {
+        display: none;
+    }
+    #printButton{
+        display: none;
+    }
+
+}
+
+#printButton{
+    position: inherit;
+    opacity: 0.5;
+    width:20%;
+    font-family: serif;
+    background-color: gray; 
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    font-size: 2vw;
+    text-decoration: none;
+    border-radius: .5vw;
+    
+}
+
+#printButton:hover{
+    text-decoration: none;
+    background-color: #FCFCFC;
+}
+
+h2{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.colorbars{
+    font-size: 2.0vw;
+    width: 100%;
+    
+}
+
+.odd
+  {
+    opacity: 0.80;
+    background-color: darkseagreen;
+    border-radius: .5vw;
+  }
+  .even
+  {
+    opacity: .80;
+    background-color: white;
+    border-radius: .5vw;  
+  }

@@ -1,0 +1,185 @@
+
+
+/*---------------------*/
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to left, rgba(10,10,10,.6), rgba(0,0,0,.2));
+    font-family: serif;
+    font-size: 1vw;
+    text-align: center;
+}
+
+
+#images{
+    margin-top: 1vw;
+    margin-left: 3vw;
+    width: 60vw;
+    height: auto;
+    border-radius: 8px;
+}
+
+#aboutPg{
+    margin-top: 1vw;
+    font-family: sans-serif;
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 3.5vw;
+    color: gray;    
+}
+
+
+#banner{
+    background: linear-gradient(to left, rgba(10,10,10,.6), rgba(0,0,0,.2));
+    text-align: center;
+    
+}
+
+#footerOwl{
+    width: 4%;
+    height: auto;
+}
+
+#time{
+    color: pink;
+    text-align: center;
+    font-family: serif;
+    font-size: 4vw;
+    
+}
+
+#baby{
+    text-align: center;
+    font-family: serif;
+    font-size: 4vw;
+    color:skyblue;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
+
+#register{
+    font-size: 2vw;
+    font-family: serif;
+}
+
+
+h1{
+    font-size: 10vw;
+    text-align: center;
+    font-family: serif;
+}
+
+#goR{
+    opacity: 0.5;
+    width:10%;
+    font-family: serif;
+    background-color: gold;
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1vw;
+    margin-left: 53vw;
+    text-decoration: none;
+    display: block;
+    border-radius: 8vw;
+    margin-bottom: 3vw;
+}
+
+
+#submit,#index{
+    
+    opacity: 0.5;
+    width:30%;
+    font-family: serif;
+    background-color: gray; 
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    font-size: 5vw;
+    margin: 1vw auto;
+    text-decoration: none;
+    display: block;
+}
+
+#lastName,#password,#firstName{
+    margin: 3vw;
+    margin-left: 35%;
+    width: 30%;
+    font-size: 2vw;
+    background-color: whitesmoke;
+}
+
+
+#username{
+    margin: 3vw;
+    margin-left: 35%;
+    width: 30%;
+    font-size: 2vw;
+    background-color: whitesmoke;
+}
+
+#submit:hover,#index:hover,#save:hover,#delete:hover, #gotit:hover{
+    text-decoration: none;
+    background-color: darkgray;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#submit:active,#save:active,#delete:active, #gotit:active{
+    background-color: darkgray;
+    
+}
+
+.form-group{
+    font-family: serif;
+    font-size: 3vw;
+    text-align: center;
+}
+
+#save,#delete{
+    opacity: 0.5;
+    width:20%;
+    font-family: serif;
+    background-color: gray; 
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    font-size: 2vw;
+    margin-left: 12vw 1vw;
+    text-decoration: none;
+}
+
+
+

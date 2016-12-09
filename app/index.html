@@ -1,0 +1,51 @@
+
+<html>
+    
+<head>
+    <meta charset="utf-8" />
+    <title>Time4Baby</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+
+    <link rel='shortcut icon' href='app-content/Owl1.ico' type='image/x-icon'/ >
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app-content/app.css" rel="stylesheet" />
+</head>
+
+<body class="container">
+
+    <!-- header -->
+    <header>
+        <ul class="nav nav-pills">
+            <li id="no-print" ng-class="{active: activeTab === 'home'}"><a ui-sref="home">Home</a>
+            </li>
+            <li id="no-print" ng-class="{active: activeTab === 'log'}"><a ui-sref="log">Log</a>
+            </li>
+            <li id="no-print" ng-class="{active: activeTab === 'account'}"><a ui-sref="account">Account</a>
+            </li>
+            <li id="no-print"><a href="/login" target="_self">Logout</a>
+            </li>
+        </ul>
+
+        <div class="flash-message" ng-if="flash">
+            <div class="{{'alert alert-' + flash.type}}" ng-bind="flash.message"></div>
+        </div>
+    </header>
+
+    <main ui-view></main>
+
+    <!-- external scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <!-- application scripts -->
+    <script src="app.js"></script>
+    <script src="app-services/user.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+    <script src="home/index.controller.js"></script>
+    <script src="account/index.controller.js"></script>
+    <script src="log/index.controller.js"></script>
+
+
+</body>
+

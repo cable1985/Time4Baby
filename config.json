@@ -1,0 +1,6 @@
+{
+    "connectionString": "mongodb://localhost:27017/babytime",
+    "portal": "http://time4baby.herokuapp.com/api",
+    "apiUrl": "http://localhost:3000/api",
+    "secret": "getting it right"
+}

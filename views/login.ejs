@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <div id="banner">
+        <span id="time">T I M E</span>
+        <img src="Owl1.png" alt="" />
+        <span id="baby" >B A B Y</span>
+    </div>
+    
+    
+    <meta charset="utf-8" />
+    <title>Login</title>
+    
+    <link rel="shortcut icon" href="Owl.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+              
+</head>
+ 
+<body id="login">
+     
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+    <form method="post">
+        <div class="form-group">
+            <input type="text" name="username" id="username" value="<%= locals.username || '' %>" class="form-control" placeholder="Username" />
+        </div>
+        
+        <div class="form-group">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
+        </div>
+
+        <div class="form-group">
+            <button id="submit" type="submit" class="btn btn-primary">Login</button>
+            <a id="register" href="/register" class="btn btn-link">Register</a>
+            
+        </div>
+    </form>
+</div>
+    
+
+</body>
+        <div class="footer">
+            <span>T I M E</span>
+            <img id="footerOwl" src="Owl1.png" alt="" />
+            <span>B A B Y</span> <br>
+            <a id="about" href="/about" class="btn btn-link">About</a>
+        </div>
+    
+</html>
+   

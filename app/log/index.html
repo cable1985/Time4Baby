@@ -1,0 +1,69 @@
+<h2>{{vm.user.firstName}} {{vm.user.lastName}}<br><button id="printButton" onclick="printFunction()">Print this page</button></h2>
+
+    <div id="banner">
+        <img src="app-content/Owl.png" alt="" />
+        <span id="name" >{{vm.user.firstLetter}}</span>
+    </div>
+
+<link href="app-content/app.css" rel="stylesheet" />
+
+<!--
+    ng-repeat prints the contents of the log array
+    in order and a neat fashion
+-->
+
+<div ng-controller="Log.IndexController">
+    <ul>
+        <h3>Nursing:</h3>
+        <div ng-repeat="x in vm.user.nurselog | 
+                        orderBy: '$index':true">
+            <div class="colorbars" ng-class-odd="'odd'" 
+                 ng-class-even="'even'">
+                <button id="no-print" class="button" 
+                        ng-click="vm.remove(x)"><span>Remove</span>
+                </button>
+                
+                <span id="log">{{x}}</span>
+
+            </div>
+        </div>
+    
+        <h3>Feeding:</h3>
+        <div ng-repeat="x in vm.user.feedlog | orderBy: '$index':true">
+            <div class="colorbars" ng-class-odd="'odd'" ng-class-even="'even'">
+                <button id="no-print" class="button" ng-click="vm.remove(x)"><span>Remove</span>
+                </button>
+                <span id="log">{{x}}</span>
+
+            </div>
+        </div>
+    
+        <h3>Changing:</h3>
+        <div ng-repeat="x in vm.user.changelog | orderBy: '$index':true">
+            <div class="colorbars" ng-class-odd="'odd'" ng-class-even="'even'">
+                <button id="no-print" class="button" ng-click="vm.remove(x)"><span>Remove</span>
+                </button>
+                <span id="log">{{x}}</span>
+
+            </div>
+        </div>
+
+        <div class="pagebreak"></div>
+        <h3>Pumping:</h3>
+        <div ng-repeat="x in vm.user.pumplog | orderBy: '$index':true">
+            <div class="colorbars" ng-class-odd="'odd'" ng-class-even="'even'">
+                <button id="no-print" class="button" ng-click="vm.remove(x)"><span>Remove</span>
+                </button>
+
+                <span id="log">{{x}}</span>
+
+            </div>
+        </div>
+    </ul>
+</div>
+
+<script>
+    function printFunction() {
+        window.print();
+    }
+</script>
